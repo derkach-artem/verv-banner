@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
+}
+
+@media only screen {
+    .container {
+        display: flex;
+        position: relative;
+        .close {
+            position: absolute;
+            right: 17px;
+            top: 12px;
+            width: 15px;
+            height: 16px;
+            opacity: 0.9;
+        }
+        .close:hover {
+            opacity: 1;
+        }
+        .close:before, .close:after {
+            position: absolute;
+            left: 15px;
+            content: ' ';
+            height: 17px;
+            width: 2px;
+            background-color: #d1d1d6;
+        }
+        .close:before {
+            transform: rotate(45deg);
+        }
+        .close:after {
+            transform: rotate(-45deg);
+        }
+        .content {
+            margin: auto;
+            h1 {
+                color: #333333;
+                font-weight: 700;
+                letter-spacing: 0.05px;
+                text-align: center;
+            }
+            .button-group {
+                display: flex;
+                flex-direction: column;
+                margin-top: 32px;
+                .button {
+                    position: relative;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    text-decoration: none;
+                    justify-content: space-around;
+                    align-items: center;                
+                    width: 100%;
+                    min-height: 70px;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-direction: row;
+                    border-radius: 100px;
+                    border: 1px solid #ee334b;
+                    outline: none;
+                    &_container {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        .button_discount {
+                            span {
+                                color: #ee334b;
+                                display: block;
+                                text-align: left;
+                            }
+                            .discount {
+                                font-weight: 700;
+                                text-transform: uppercase;
+                            }
+                            .year_discount {
+                                font-weight: 300;
+                                letter-spacing: 0.04px;
+                            }
+                        }
+                        .button_description {
+                            background-image: linear-gradient(270deg, rgba(255, 86, 141, 0.98) 0%, rgba(245, 30, 71, 0.98) 100%);
+                            text-align: center;
+                            border-radius: 100px;
+                            position: relative;
+                            p {
+                                padding: 12px 14px;
+                                display: block;
+                                margin: auto;
+                                text-align: center;
+                                min-height: 17px;
+                                color: #ffffff;
+                                font-weight: 700;
+                                line-height: 17px;
+                                text-transform: uppercase;
+                                letter-spacing: 0.02px;
+                                text-overflow: ellipsis;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+
+                    &:first-child {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+        }
+
+        .list {
+            list-style-type: none;
+            &-item:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            &-item {
+                display: flex;
+                align-items: baseline;
+                &-icon-wrap {
+                    min-width: 9px;
+                    min-height: 7px;
+                    background-color: #ee334b;
+                    border-radius: 8px;
+                    color: #ffffff;
+                    padding: 3px 2px;
+                    position: relative;
+                    margin-right: 13px; 
+                    .icon {
+                        position: absolute;
+                        transform: rotate(45deg) scaleX(-1);
+                        top: -1px;
+                        right: 3px;
+                        font-size: 10px;
+                        text-transform: uppercase;
+                    }
+                }
+                &-description {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #000000;
+                }
+            }
+        }
+    }
+    .footer {
+        width: 309px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        p {
+            padding-top: 10px;
+            font-size: 11px;
+            font-weight: 400;
+            text-align: center;
+            color: #000000;
+            a {
+                font-size: 11px;
+                font-weight: 400;
+                text-align: center;
+                color: #000000;
+                text-decoration: none;
+            }
+        }
+        p:last-child {
+            text-align: justify;
+        }
+    }
+    .opacity-container {
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        height: 42px;
+        background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+    }
+    
+    .substrate {
+        width: 100%;
+        bottom: 0px;
+        height: 30px;
+        background-color: #ffffff;
+        display: none;
+        position: fixed;
+        bottom: 0px;
+    }
+}
+
+
+@import "./iPhoneSE.scss";
+@import "./iPhone6-7-8.scss";
+@import "./iPhone6-7-8-Plus.scss";
+@import "./iPhoneX.scss";

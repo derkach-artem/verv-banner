@@ -1,0 +1,63 @@
+// iPhone 6, 7, & 8 in portrait
+@media only screen 
+and (min-device-width : 375px) 
+and (min-device-height : 667px) 
+and (orientation : portrait) {
+    .close {
+		top: 12px;
+	}
+    .content {
+        min-width: 335px;
+        h1 {
+            font-size: 34px;
+            min-width: 291px;
+            height: 40px;
+            margin-top: 138px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .button-group {
+			.button {
+				&_container {
+					.button_discount {
+						max-width: 114px;
+						width: 114px;
+						span {}
+						.discount {
+                            // font-size: 22px;
+                            font-size: 20px;
+						}
+						.year_discount {
+							font-size: 14px;
+						}
+					}
+					.button_description {
+						width: 162px;
+						max-width: 162px;
+						left: 15px;
+						p {
+							font-size: 14px;
+						}
+					}
+                }
+			}
+        }
+    }
+    .list {
+        width: 253px;
+        margin: auto;
+        margin-top: 32px;
+        margin-bottom: 95px;
+        &-item {
+            &-icon-wrap {
+
+            }
+            &-description {
+                font-size: 17px;
+            }
+        }
+    }
+    .substrate {
+		display: none;
+	}
+}

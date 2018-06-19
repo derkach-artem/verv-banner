@@ -1,0 +1,77 @@
+// iPhone X in portrait
+@media only screen 
+and (min-device-width : 375px) 
+and (min-device-height: 812px)
+and (orientation : portrait) {
+    .container {
+        .close {
+            position: absolute;
+            right: 17px;
+            top: 45px;
+            width: 15px;
+            height: 16px;
+            opacity: 0.9;
+        }
+        .content {
+            min-width: 335px;
+            h1 {
+                font-size: 34px;
+                min-width: 291px;
+                height: 40px;
+                margin-top: 195px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .button-group {
+                .button {
+                    &_container {
+                        .button_discount {
+                            position: relative;
+                            left: 0px;
+                            max-width: 114px;
+                            width: 114px;
+                            span {}
+                            .discount {
+                                font-size: 20px;
+                            }
+                            .year_discount {
+                                font-size: 14px;
+                            }
+                        }
+                        .button_description {
+                            width: 162px;
+                            max-width: 162px;
+                            left: 12px;
+                            p {
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .list {
+            width: 244px;
+            margin: auto;
+            margin-top: 32px;
+            margin-bottom: 138px;
+            &-item {
+                &-icon-wrap {
+    
+                }
+                &-description {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .footer {
+        margin-bottom: 50px;
+    }
+    .opacity-container {
+        bottom: 30px;
+    }
+    .substrate {
+        display: block;
+    }
+}
